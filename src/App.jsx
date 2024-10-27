@@ -1,7 +1,6 @@
 import viteLogo from '/vite.svg';
 
 import './assets/CSS/main.css'
-import DarkmodeSwitch from './Components/DarkmodeSwitch';
 import Header from './Components/Header/Header';
 import Hero from './Components/Hero/Hero';
 import Logotypes from './Components/Logotypes/Logotypes';

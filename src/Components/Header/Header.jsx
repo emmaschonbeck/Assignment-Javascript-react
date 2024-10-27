@@ -1,8 +1,9 @@
 import React from 'react'
 import LogoNavbar from './LogoNavbar'
-import BtnDarkmode from './BtnDarkmode'
+import DarkModeSwitch from './DarkModeSwitch'
 import BtnSignIn from './BtnSignIn'
 import MobileMenu from './MobileMenu'
+
 
 
 
@@ -14,7 +15,7 @@ const Header = () => {
             <div className="container">
 
                 <LogoNavbar />
-                <BtnDarkmode />
+                <DarkModeSwitch />
                 <BtnSignIn />
                 <MobileMenu />
 
