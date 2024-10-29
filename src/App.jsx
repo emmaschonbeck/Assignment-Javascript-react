@@ -1,39 +1,29 @@
 import viteLogo from '/vite.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './assets/CSS/main.css'
 import Header from './Components/Header/Header';
-import Hero from './Components/Hero/Hero';
-import Logotypes from './Components/Logotypes/Logotypes';
-import AppFeatures from './Components/AppFeatures/AppFeatures';
-import HowDoesItWork from './Components/HowDoesItWork/HowDoesItWork';
-import DesktopOnly1 from './Components/DesktopOnly1/DesktopOnly1';
-import DesktopOnly2 from './Components/DesktopOnly2/DesktopOnly2';
-import Faqs from './Components/FAQs/Faqs';
-import SubscribeInput from './Components/SubscribeInput/SubscribeInput';
 import Footer from './Components/Footer/Footer';
+import Home from './Components/Pages/Home';
+import Contact from './Components/Pages/Contact';
+
 
 
 
 function App() {
   return (
-    <>
-    
-      <Header />
+    <BrowserRouter>
+        <Header />
 
-      <main>
-        <Hero />
-        <Logotypes />
-        <AppFeatures />
-        <HowDoesItWork />
-        <DesktopOnly1 />
-        <DesktopOnly2 />
-        <Faqs />
-        <SubscribeInput />
-      </main>
+        <main>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='Contact' element={<Contact />} />
+          </Routes>
+        </main>
 
-      <Footer />
-    
-    </>
+        <Footer />
+    </BrowserRouter>
   )
 }
 

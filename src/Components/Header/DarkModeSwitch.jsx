@@ -17,17 +17,17 @@ const DarkModeSwitch = () => {
     }
   };
 
-useEffect(() => {
-  const savedTheme = localStorage.getItem('theme')
-  
-  if(savedTheme === 'dark') {
-    document.documentElement.classList.add('dark');
-    setisDarkMode(true)
-  }
-  else{
-    document.documentElement.classList.remove('dark');
-    setisDarkMode(false)
-  }
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme')
+    
+    if(savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+      setisDarkMode(true)
+    }
+    else{
+      document.documentElement.classList.remove('dark');
+      setisDarkMode(false)
+    }
 
 }, [])
 
@@ -44,7 +44,6 @@ useEffect(() => {
             </label> 
         </div>
     </>
-
   )
 }
 
