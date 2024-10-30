@@ -1,6 +1,7 @@
 import React from 'react'
 import Links from './Links'
 import ContactDetails from './ContactDetails'
+import FillForm from '../FillForm/FillForm'
 
 const ContactInfo = () => {
   return (

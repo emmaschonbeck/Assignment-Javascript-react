@@ -1605,10 +1605,35 @@ header .header-container {
 /* FOOTER END */
 
 
+
+/* CONTACT PAGE 1 LAYOUT START */
+
+
+.Contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 1400px) {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+}
+
+
+/* CONTACT PAGE 1 LAYOUT START */
+
+
+
+
 /* CONTACT US PAGE 1 START */
 
 #contact-page {
     background: var(--color-background);
+    height: 690px;
+
+    @media (max-width: 1400px) {
+        height: auto;
+    }
 
     .container {
 
@@ -1764,22 +1789,20 @@ header .header-container {
     .container {
         background-color: var(--color-card-bg);
         width: 100%;
-        max-width: 640px;
+        max-width: 630px;
         margin: 0 auto;
         padding: 4.5rem;
         margin-top: 5rem;
         margin-bottom: 5rem;
+        left: 10px;
         border-radius: 8px;
         box-shadow: 0 2px 10px var(--color-form-shadow);
 
-        position: absolute;
-        right: 420px;
-        bottom: 120px;
+        position: relative;
 
         @media (max-width: 1400px) {
-           position: relative;
-           right: 0;
-           bottom: 0;
+            position: unset;
+            justify-self: start;
         }
 
         @media (max-width: 768px) {
@@ -1878,6 +1901,7 @@ header .header-container {
         @media (max-width: 768px) {
             display: flex;
             align-items: center;
+            padding-top: 4rem;
         }
     }
 
