@@ -1,25 +1,24 @@
 import React from 'react'
 import FaqText from './FaqText'
 import ContactBox from './ContactBox'
-import AccordionUpper from './AccordionUpper'
-import AccordionMiddle from './AccordionMiddle'
-import AccordionLower from './AccordionLower'
+// import AccordionUpper from './AccordionUpper'
+// import AccordionMiddle from './AccordionMiddle'
+// import AccordionLower from './AccordionLower'
 import BtnContact from './BtnContact'
+import FaqApi from './FaqApi'
 
 const Faqs = () => {
   return (
     
     <section id="FAQs">
-        <div class="container">
+        <div className="container">
             <FaqText />
             <ContactBox />
 
-            <div class="empty"></div>
+            <div className="empty"></div>
 
-            <div class="accordion-container">
-                <AccordionUpper />
-                <AccordionMiddle />
-                <AccordionLower />
+            <div className="accordion-container">
+              <FaqApi />
             </div>
 
             <BtnContact />
