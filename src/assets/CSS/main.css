@@ -1128,6 +1128,24 @@ header .header-container {
         
     }
 
+    .faq-item {
+        display: flex;
+        align-items: center;
+
+        border: 1px solid transparent;
+        border-radius: 8px;
+        box-shadow: 0px 1px 8px 0px var(--color-accordion-shadow);
+    }
+
+    .faq-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    }
+
     .empty {
         display: none;
         grid-area: empty;
@@ -1266,7 +1284,7 @@ header .header-container {
         }
     }
 
-    .accordion {
+    /* .accordion {
         @media (min-width: 768px) {
             box-shadow: 0px 1px 8px 0px var(--color-accordion-shadow);
         }
@@ -1291,9 +1309,9 @@ header .header-container {
                 border-radius: 8px 8px 8px 8px;
             }
         }
-    }
+    } */
 
-    .accordion label {
+    /* .accordion label {
         border: 1px solid var(--color-grey-300);
         display: flex;
         align-items: center;
@@ -1309,9 +1327,9 @@ header .header-container {
             font-weight: 600;
             color: var(--color-titles);
         }
-    }
+    } */
 
-    .upper label {
+    /* .upper label {
         border-radius: 8px 8px 0 0;
         cursor: pointer;
 
@@ -1326,9 +1344,9 @@ header .header-container {
             border-radius: 8px 8px 8px 8px;
             cursor: pointer;
         }
-    }
+    } */
 
-    .lower label {
+    /* .lower label {
         border-radius: 0 0 8px 8px;
         cursor: pointer;
     }
@@ -1339,7 +1357,7 @@ header .header-container {
 
     input[type="radio"] {
         display: none;
-    }
+    } */
 
     .arrow-down-icon {
         display: inline-flex;
@@ -1364,7 +1382,7 @@ header .header-container {
         transform: rotate(180deg);
     }
 
-    .accordion input[type="radio"]:checked + label .arrow-down-icon .fa-chevron-up {
+    /* .accordion input[type="radio"]:checked + label .arrow-down-icon .fa-chevron-up {
         color: var(--color-white);
     } 
 
@@ -1386,7 +1404,7 @@ header .header-container {
         @media (min-width: 768px) {
             border: none;
         }
-    }
+    } */
 
     .btn-contact-container {
         display: flex;
