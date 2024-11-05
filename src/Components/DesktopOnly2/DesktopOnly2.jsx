@@ -10,6 +10,7 @@ const DesktopOnly2 = () => {
             <h2>Clients are <br></br> Loving Our App</h2>
 
             <div class="card-container">
+                {/* <Testimonials /> */}
                 <Card1 />
                 <Card2 />
             </div>

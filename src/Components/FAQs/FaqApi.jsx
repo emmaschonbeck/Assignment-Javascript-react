@@ -22,18 +22,18 @@ const FaqApi = () => {
         }, [])
         
         return (
-        <div className='FaqApi'>
-            <div className='Faq-List'>
-                {Array.isArray(faqItems) && faqItems.length > 0 ? (
-                    faqItems.map((item) => (
-                        <FaqApiItem key={item.id} item={item} />
-                    ))
-                ) : (
-                    <p>No FAQs available</p>
-                )}
+            <div className='FaqApi'>
+                <div className='Faq-List'>
+                    {Array.isArray(faqItems) && faqItems.length > 0 ? (
+                        faqItems.map((item) => (
+                            <FaqApiItem key={item.id} item={item} />
+                        ))
+                    ) : (
+                        <p>No FAQs available</p>
+                    )}
+                </div>
             </div>
-        </div>
-    )
+        )
 }
 
 export default FaqApi

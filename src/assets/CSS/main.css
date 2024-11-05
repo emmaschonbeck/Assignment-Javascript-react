@@ -120,6 +120,11 @@ body {
     font-size: 16px;
 }
 
+.error-message {
+    color: rgb(218, 111, 111);
+    font-size: 1rem;
+}
+
 /* HEADER START */
 
 #header {
@@ -1131,6 +1136,8 @@ header .header-container {
     .faq-item {
         display: flex;
         align-items: center;
+        padding: 1rem;
+        justify-content: space-between;
 
         border: 1px solid transparent;
         border-radius: 8px;
@@ -1144,6 +1151,43 @@ header .header-container {
 
         margin-bottom: .5rem;
         margin-top: .5rem;
+        margin-right: 1rem;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--color-titles);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+
+            text-align: start;
+            margin: 0;
+            max-width: 100%;
+
+            @media (max-width: 768px) {
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            @media (max-width: 1400px) {
+                color: var(--color-titles);
+                max-width: 340px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            color: var(--color-text);
+
+            text-align: start;
+            margin: 0 auto;
+            
+            @media (max-width: 1400px) {
+                text-align: center;
+                max-width: 100%;
+            }
+
+        }
     }
 
     .empty {
@@ -1168,45 +1212,6 @@ header .header-container {
             margin: 0;
         }
 
-
-        h2 {
-            font-size: 32px;
-            font-weight: 800;
-            color: var(--color-titles);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-
-            text-align: center;
-            margin: 0 auto;
-            max-width: 100%;
-
-            @media (min-width: 768px) {
-                color: var(--color-titles);
-                max-width: 340px;
-            }
-
-            @media (min-width: 1400px) {
-                text-align: start;
-                margin: 0;
-            }
-        }
-
-        p {
-            font-size: 18px;
-            color: var(--color-text);
-
-            text-align: center;
-            margin: 0 auto;
-            max-width: 100%;
-
-            @media (min-width: 768px) {
-                max-width: 410px;
-            }
-
-            @media (min-width: 1400px) {
-                text-align: start;
-            }
-        }
     }
 
     .contact-container {
@@ -1895,6 +1900,63 @@ header .header-container {
 }
 
 /* FORM END */
+
+/* INFORMATION BOX START */
+
+#informationbox-container {
+    
+
+    .informationsbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        width: 350px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: 56rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        
+        border: 1px solid transparent;
+        border-radius: 8px;
+        background-color: rgb(154, 235, 154);
+        
+    
+        h1 {
+            color: var(--color-titles);
+        }
+    
+        p {
+            color: var(--color-text);
+            text-align: center;
+            padding: .5rem;
+        }
+    }
+    
+    .btn-infobox {
+        background-color: rgb(109, 187, 109);
+        border: none;
+        border-radius: 4px;
+        width: 50%;
+        padding: .7rem;
+        color: var(--color-light);
+
+        cursor: pointer;
+        transition: 1s;
+
+        &&:hover {
+            background-color: rgb(93, 160, 93);
+        }
+    }
+
+
+}
+
+
+/* INFORMATION BOX END */
+
 
 
 /* CONTACT US PAGE 2 START */
