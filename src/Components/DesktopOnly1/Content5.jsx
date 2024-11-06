@@ -7,20 +7,20 @@ import BtnArrowIcon from '../../assets/Images/Page 4 images/arrow-icon.svg'
 const Content5 = () => {
   return (
     
-    <div class="content-5">
+    <div className="content-5">
         <h2>Receive payment from <br></br> international bank details</h2>
 
-        <div class="payment-container">
-            <div class="payment-icon-container">
-                <div class="img-container">
+        <div className="payment-container">
+            <div className="payment-icon-container">
+                <div className="img-container">
                     <img src={CreditCardIcon2} alt="credit card icon" />
                 </div>
                 <div>
                     <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
                 </div>
             </div>
-            <div class="payment-icon-container">
-                <div class="img-container">
+            <div className="payment-icon-container">
+                <div className="img-container">
                     <img src={WalletIcon2} alt="wallet icon" />
                 </div>
                 <div>
@@ -29,7 +29,7 @@ const Content5 = () => {
             </div>
         </div>
 
-        <button class="btn-learn-more-2">Learn more <img src={BtnArrowIcon} alt="arrow right icon" /></button>
+        <button className="btn-learn-more-2">Learn more <img src={BtnArrowIcon} alt="arrow right icon" /></button>
 
     </div>
 

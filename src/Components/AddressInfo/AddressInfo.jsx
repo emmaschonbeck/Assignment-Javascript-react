@@ -8,10 +8,10 @@ const AddressInfo = () => {
     
 
     <section id="address-page">
-        <div class="container">
+        <div className="container">
             <MapImg />
             
-            <div class="address-info">
+            <div className="address-info">
                 <AddressDetails />
                 <SocialMediaIcons />
             </div>

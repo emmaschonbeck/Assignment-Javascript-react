@@ -4,7 +4,7 @@ const BtnSubmit = () => {
 
   return (
     
-    <button type='submit' class="btn-submit">Make an appointment</button>
+    <button type='submit' className="btn-submit">Make an appointment</button>
 
   )
 }

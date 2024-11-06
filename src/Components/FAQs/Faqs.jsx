@@ -1,9 +1,6 @@
 import React from 'react'
 import FaqText from './FaqText'
 import ContactBox from './ContactBox'
-// import AccordionUpper from './AccordionUpper'
-// import AccordionMiddle from './AccordionMiddle'
-// import AccordionLower from './AccordionLower'
 import BtnContact from './BtnContact'
 import FaqApi from './FaqApi'
 

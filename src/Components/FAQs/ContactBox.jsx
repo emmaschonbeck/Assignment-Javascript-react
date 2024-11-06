@@ -8,13 +8,13 @@ import ArrowMessageIcon from '../../assets/Images/Page 6 images/arrow-message.sv
 const ContactBox = () => {
   return (
     
-    <div class="contact-container">
-        <div class="contact-us">
+    <div className="contact-container">
+        <div className="contact-us">
             <img src={PhoneIcon} alt="" />
             <p>Still have  questions?</p>
-            <a class="contact-phone" href="#">Contact us <img src={ArrowPhoneIcon} alt="" /></a>
+            <a className="contact-phone" href="#">Contact us <img src={ArrowPhoneIcon} alt="" /></a>
         </div>
-        <div class="contact-us">
+        <div className="contact-us">
             <img src={MessageIcon} alt="" />
             <p>Don't like phone calls?</p>
             <a href="#">Contact us <img src={ArrowMessageIcon} alt="" /></a>

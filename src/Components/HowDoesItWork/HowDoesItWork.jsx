@@ -9,11 +9,11 @@ const HowDoesItWork = () => {
     
 
     <section id="how-does-it-work">
-        <div class="container">
-            <div class="content-3">
+        <div className="container">
+            <div className="content-3">
                 <h2>How Does It Work?</h2>
 
-                <div class="iphone-carousel">
+                <div className="iphone-carousel">
                     <DesktopImages />
                     <MobileImage />
                     <TabletImages />

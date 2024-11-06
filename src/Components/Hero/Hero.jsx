@@ -8,11 +8,11 @@ const Hero = () => {
     
     <>
         <section id="hero">
-            <div class="container">
-                <div class="headline">
+            <div className="container">
+                <div className="headline">
                     <h1>Manage All Your <br></br>Money in One App</h1>
                 </div>
-                <div class="content">
+                <div className="content">
                     <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
                     <BtnDownloadApp />
                     <DiscoverMoreBtn />

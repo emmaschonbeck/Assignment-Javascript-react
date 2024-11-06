@@ -5,8 +5,8 @@ import MobileCarouselImage from '../../assets/Images/Page 3 images/mobile-img.sv
 const MobileImage = () => {
   return (
     
-    <div class="carousel-img">
-        <img class="img-mobile" src={MobileCarouselImage} alt="" />
+    <div className="carousel-img">
+        <img className="img-mobile" src={MobileCarouselImage} alt="" />
     </div>
 
   )

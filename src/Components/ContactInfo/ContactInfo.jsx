@@ -8,7 +8,7 @@ const ContactInfo = () => {
 
     <>
         <section id="contact-page">
-            <div class="container">
+            <div className="container">
                 <Links />
                 <ContactDetails />
             </div>

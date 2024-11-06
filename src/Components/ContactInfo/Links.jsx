@@ -8,12 +8,12 @@ import ArrowsRight from '../../assets/Images/Contact-page images/arrows-right.sv
 const Links = () => {
   return (
     
-    <div class="links">
-        <div class="homepage-link">
+    <div className="links">
+        <div className="homepage-link">
             <img src={HouseIcon} alt="" />
             <NavLink to='/'>Homepage</NavLink>
         </div>
-        <div class="contact-links">
+        <div className="contact-links">
             <img src={ArrowsRight} alt="" />
             <NavLink to="/Contact">Contact</NavLink>
         </div>

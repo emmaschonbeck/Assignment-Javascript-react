@@ -6,9 +6,9 @@ import PhoneFront from '../../assets/Images/Page 1 images/iPhone.front.svg'
 const HeroPhoneImg = () => {
   return (
     
-    <div class="images">
-        <img class="phone-back" src={PhoneBack} alt="iphone my budget" />
-        <img class="phone-front" src={PhoneFront} alt="iphone your cards" />
+    <div className="images">
+        <img className="phone-back" src={PhoneBack} alt="iphone my budget" />
+        <img className="phone-front" src={PhoneFront} alt="iphone your cards" />
     </div>
   )
 }

@@ -11,24 +11,24 @@ const Logotypes = () => {
   return (
     
     <section id="logotypes">
-        <div class="container">
-            <div class="logotypes-row">
-                <div class="logo-card">
+        <div className="container">
+            <div className="logotypes-row">
+                <div className="logo-card">
                     <img src={Logo1} alt="logotypes" />
                 </div>
-                <div class="logo-card">
+                <div className="logo-card">
                     <img src={Logo2} alt="logotypes" />
                 </div>
-                <div class="logo-card logo-align">
+                <div className="logo-card logo-align">
                     <img src={Logo3} alt="logotypes" />
                 </div>
-                <div class="logo-card">
+                <div className="logo-card">
                     <img src={Logo4} alt="logotypes" />
                 </div>
-                <div id="desktop-add" class="logo-card">
+                <div id="desktop-add" className="logo-card">
                     <img src={Logo5} alt="logotypes" />
                 </div>
-                <div id="desktop-add" class="logo-card logo-shadow">
+                <div id="desktop-add" className="logo-card logo-shadow">
                     <img src={Logo6} alt="logotypes" />
                 </div>
             </div>

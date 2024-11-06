@@ -4,6 +4,7 @@ import FaqApiItem from './FaqApiItem'
 const FaqApi = () => {
 
     const [faqItems, setFaqItems] = useState([])
+    const [openIndex, setOpenIndex] = useState(null);
     
         useEffect(() => {
             const fetchFaqApi = async () => {
@@ -19,14 +20,18 @@ const FaqApi = () => {
 
             fetchFaqApi();
 
-        }, [])
+        }, []);
+
+        const toggleFaq = (index) => {
+            setOpenIndex(openIndex === index ? null : index);
+        };
         
         return (
             <div className='FaqApi'>
                 <div className='Faq-List'>
                     {Array.isArray(faqItems) && faqItems.length > 0 ? (
-                        faqItems.map((item) => (
-                            <FaqApiItem key={item.id} item={item} />
+                        faqItems.map((item, index) => (
+                            <FaqApiItem key={item.id} item={item} isOpen={openIndex === index} onToggle={() => toggleFaq(index)} />
                         ))
                     ) : (
                         <p>No FAQs available</p>

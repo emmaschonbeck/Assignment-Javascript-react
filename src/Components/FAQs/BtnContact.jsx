@@ -3,8 +3,8 @@ import React from 'react'
 const BtnContact = () => {
   return (
     
-    <div class="btn-contact-container">
-        <button class="btn-contact-us">Contact us now</button>
+    <div className="btn-contact-container">
+        <button className="btn-contact-us">Contact us now</button>
     </div>
 
   )

@@ -7,15 +7,15 @@ import TabletRightImage from '../../assets/Images/Page 3 images/right-img-tablet
 const TabletImages = () => {
   return (
     
-    <div class="tablet-img-container">
-        <div class="carousel-img">
-            <img class="img-tablet" src={TabletLeftImage} alt="" />
+    <div className="tablet-img-container">
+        <div className="carousel-img">
+            <img className="img-tablet" src={TabletLeftImage} alt="" />
         </div>
-        <div class="carousel-img">
-            <img class="img-tablet" src={TabletMiddleImage} alt="" />
+        <div className="carousel-img">
+            <img className="img-tablet" src={TabletMiddleImage} alt="" />
         </div>
-        <div class="carousel-img">
-            <img class="img-tablet" src={TabletRightImage} alt="" />
+        <div className="carousel-img">
+            <img className="img-tablet" src={TabletRightImage} alt="" />
         </div>
     </div>
 

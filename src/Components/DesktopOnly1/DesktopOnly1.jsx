@@ -8,7 +8,7 @@ const DesktopOnly1 = () => {
   return (
     
     <section id="desktop-only-1">
-        <div class="container">
+        <div className="container">
 
             <Content4 />
             <ImageUpper />

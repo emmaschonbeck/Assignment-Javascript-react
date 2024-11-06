@@ -6,10 +6,10 @@ const DesktopOnly2 = () => {
   return (
     
     <section id="desktop-only-2">
-        <div class="container">
+        <div className="container">
             <h2>Clients are <br></br> Loving Our App</h2>
 
-            <div class="card-container">
+            <div className="card-container">
                 {/* <Testimonials /> */}
                 <Card1 />
                 <Card2 />

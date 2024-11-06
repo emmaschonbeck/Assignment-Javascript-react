@@ -6,7 +6,7 @@ const SubscribeInput = () => {
   return (
     
     <section id="subscribe-input">
-        <div class="subscribe-container">
+        <div className="subscribe-container">
             <Newsletter />
             <InputField />
         </div>

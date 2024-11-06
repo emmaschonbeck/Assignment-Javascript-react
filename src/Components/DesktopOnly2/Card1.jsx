@@ -7,17 +7,17 @@ import AvatarGirlIcon from '../../assets/Images/Page 5 images/avatar-girl.svg'
 const Card1 = () => {
   return (
     
-    <div class="card">
-        <div class="card-icon">
+    <div className="card">
+        <div className="card-icon">
             <img src={QuotesIcon1} alt="" />
         </div>
-        <div class="card-rating-icon">
+        <div className="card-rating-icon">
             <img src={RatingIcon1} alt="" />
         </div>
-        <div class="card-text">
+        <div className="card-text">
             <p>Sit pretium aliquam tempor, orci dolor sed <br></br> maecenas rutrum sagittis. Laoreet posuere <br></br> rhoncus, egestas lacus, egestas justo <br></br> aliquam vel. Nisi vitae lectus hac hendrerit. <br></br> Montes justo turpis sit amet.</p>
         </div>
-        <div class="user-container">
+        <div className="user-container">
             <img src={AvatarGirlIcon} alt="" />
             <div>
                 <h3>Fannie Summers</h3>

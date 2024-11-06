@@ -6,9 +6,9 @@ import LowerSmallImage from '../../assets/Images/Page 4 images/lower-image-sm.sv
 const ImageLower = () => {
   return (
     
-    <div class="image-lower-container">
-        <img class="img-bg2" src={LowerBigImage} alt="" />
-        <img class="img-sm2" src={LowerSmallImage} alt="" />
+    <div className="image-lower-container">
+        <img className="img-bg2" src={LowerBigImage} alt="" />
+        <img className="img-sm2" src={LowerSmallImage} alt="" />
     </div>
 
   )

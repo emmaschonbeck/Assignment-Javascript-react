@@ -6,9 +6,9 @@ import UpperSmallImage from '../../assets/Images/Page 4 images/upper-sm-image.sv
 const ImageUpper = () => {
   return (
     
-    <div class="image-upper-container">
-        <img class="img-bg" src={UpperBigImage} alt="" />
-        <img class="img-sm" src={UpperSmallImage} alt="" />
+    <div className="image-upper-container">
+        <img className="img-bg" src={UpperBigImage} alt="" />
+        <img className="img-sm" src={UpperSmallImage} alt="" />
     </div>
 
   )
