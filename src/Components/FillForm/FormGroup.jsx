@@ -2,6 +2,17 @@ import React from "react"
 
 const FormGroup = ({ formData, onChange, errors }) => {
 
+    //MEd hjälp av ChatGPT
+
+    const handleSpecialistChange = (e) => {
+        const { value } = e.target;
+        if (value !== "choose") {
+            onChange(e);
+        }
+    };
+
+    //Slut med ChatGPT
+
 
   return (
     
@@ -20,8 +31,8 @@ const FormGroup = ({ formData, onChange, errors }) => {
         
         <div className="form-group">
             <label htmlFor="specialist">Specialist</label>
-            <select name="specialist" id="specialist" value={formData.specialist} onChange={onChange}>
-                <option value="choose">Choose a specialist</option>
+            <select name="specialist" id="specialist" value={formData.specialist} onChange={handleSpecialistChange}>
+                <option value="choose" disabled>Choose a specialist</option>
                 <option value="frontend">Frontend Developer</option>
                 <option value="backend">Backend Developer</option>
                 <option value="fullstack">Fullstack Developer</option>

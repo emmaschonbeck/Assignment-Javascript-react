@@ -1,6 +1,7 @@
 import React from 'react'
 import Card1 from './Card1'
 import Card2 from './Card2'
+import TestimonialsApi from './TestimonialsApi'
 
 const DesktopOnly2 = () => {
   return (
@@ -10,9 +11,9 @@ const DesktopOnly2 = () => {
             <h2>Clients are <br></br> Loving Our App</h2>
 
             <div className="card-container">
-                {/* <Testimonials /> */}
-                <Card1 />
-                <Card2 />
+                <TestimonialsApi />
+                {/* <Card1 />
+                <Card2 /> */}
             </div>
         </div>
     </section>

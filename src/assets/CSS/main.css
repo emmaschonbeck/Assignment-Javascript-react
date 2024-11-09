@@ -31,6 +31,7 @@
     --color-light: var(--color-white);
     --color-dark: var(--color-grey-800);
     --color-background: var(--color-grey-100);
+    --color-contact-bg: var(--color-grey-100);
     --color-logo-bg: var(--color-primary);
     --color-arrow-bg: var(--color-grey-100);
     --color-download-btn: var(--color-grey-900);
@@ -58,6 +59,10 @@
     --color-chevron-up: #3E4265;
     --color-input: #B4B7C9;
 
+    --color-infobox-bg: rgb(154, 235, 154);
+    --color-infobox-btn: rgb(109, 187, 109);
+    --color-infobox-hover: rgb(93, 160, 93);
+
     --color-shadow: #6365f154;
     --color-logo-shadow: rgba(0, 0, 0, 0.092);
     --color-card-shadow: rgb(103, 98, 98, 0.10);
@@ -79,6 +84,7 @@ html {
 
     /* BACKGROUNDS */
     background-color: #0b0f19;
+    --color-contact-bg: #151822;
     --color-header-bg: rgb(27, 31, 41);
     --color-discovermore-bg: rgb(33, 30, 49);
     --logotype-bg: #151822;
@@ -103,6 +109,11 @@ html {
     --color-contact-border: #2f333b;
     --color-input-border: #2f333b;
     --color-chevron-up: var(--color-white);
+
+    /* infobox colors */
+    --color-infobox-bg: rgb(38, 66, 38);
+    --color-infobox-btn: rgb(56, 97, 56);
+    --color-infobox-hover: rgb(60, 122, 60);
     
 }
 
@@ -140,6 +151,10 @@ body {
 
 #header {
     background-color: var(--color-header-bg);
+}
+
+.header-contact {
+    background-color: var(--color-background) !important;
 }
 
 header .container {
@@ -1067,6 +1082,8 @@ header .header-container {
         background-color: var(--color-card-bg);
         box-shadow: 0 0 5px var(--color-card-shadow);
 
+        width: 415px;
+
         padding: 1.5rem;
     }
 
@@ -1651,7 +1668,8 @@ header .header-container {
 /* CONTACT US PAGE 1 START */
 
 #contact-page {
-    background: var(--color-background);
+    /* background: var(--color-background); */
+    background-color: var(--color-background);
     height: 690px;
 
     @media (max-width: 1400px) {
@@ -1921,7 +1939,7 @@ header .header-container {
         
         border: 1px solid transparent;
         border-radius: 8px;
-        background-color: rgb(154, 235, 154);
+        background-color: var(--color-infobox-bg);
         
     
         h1 {
@@ -1936,7 +1954,7 @@ header .header-container {
     }
     
     .btn-infobox {
-        background-color: rgb(109, 187, 109);
+        background-color: var(--color-infobox-btn);
         border: none;
         border-radius: 4px;
         width: 50%;
@@ -1947,7 +1965,7 @@ header .header-container {
         transition: 1s;
 
         &&:hover {
-            background-color: rgb(93, 160, 93);
+            background-color: var(--color-infobox-hover);
         }
     }
 
@@ -1964,7 +1982,7 @@ header .header-container {
 #address-page {
 
     @media (max-width: 1400px) {
-        background: var(--color-background);
+        background: var(--color-header-bg);
     }
 
     .container {

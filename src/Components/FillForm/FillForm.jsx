@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const FillForm = () => {
   
-  const [formData, setFormData] = useState({ fullName: '', email: '', specialist: '' });
+  const [formData, setFormData] = useState({ fullName: '', email: '', specialist: 'choose' });
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const navigate = useNavigate()
