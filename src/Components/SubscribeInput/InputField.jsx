@@ -11,12 +11,16 @@ const InputField = () => {
   const [submitted, setSubmitted] = useState(false);
   const navigate = useNavigate();
 
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setSubscribeData({...subscribeData, [name]: value});
 
     if (value.trim() === '') {
       setErrors(prevErrors => ({...prevErrors, [name]: `The ${name} field is required.`}))
+    } else if (name === 'email' && !emailRegex.test(value)) {
+      setErrors((prevErrors) => ({...prevErrors, [name]: `Please enter a valid email address`}))
     } else {
       setErrors(prevErrors => ({...prevErrors, [name]: ``}))
     }
@@ -37,6 +41,8 @@ const InputField = () => {
     Object.keys(subscribeData).forEach(field => {
       if (subscribeData[field].trim() === '') {
         newErrors[field] = `The ${field} is required.`
+      } else if (field === 'email' && !emailRegex.test(subscribeData[field])) {
+        newErrors[field] = `Please enter a valid email address`;
       }
     })
 

@@ -11,12 +11,19 @@ const FillForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const navigate = useNavigate()
 
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const fullNameRegex = /^[a-zA-Z\s]+$/;
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({...formData, [name]: value})
 
     if (value.trim() === '') {
       setErrors(prevErrors => ({...prevErrors, [name]: `The ${name} field is required.`}))
+    } else if (name === 'email' && !emailRegex.test(value)) {
+        setErrors(prevErrors => ({...prevErrors, [name]: `Please enter a valid email address`}))
+    } else if (name === 'fullName' && !fullNameRegex.test(value)) {
+        setErrors(prevErrors => ({...prevErrors, [name]: `Full name can only containe letters and spaces`}))
     } else {
       setErrors(prevErrors => ({...prevErrors, [name]: ''}))
     }
@@ -38,6 +45,10 @@ const FillForm = () => {
       Object.keys(formData).forEach(field => {
         if (formData[field].trim() === '') {
           newErrors[field] = `The ${field} field is required.`
+        } else if (field === 'email' && !emailRegex.test(formData[field])) {
+          newErrors[field] = `Please enter a valid email address`;
+        } else if (field === 'fullName' && !fullNameRegex.test(formData[field])) {
+          newErrors[field] = `Full name can only contain letters and spaces`;
         }
       }) 
 
