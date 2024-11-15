@@ -1220,59 +1220,19 @@ header .header-container {
 
     .faq-item {
         display: flex;
-        align-items: center;
-        padding: 1rem;
-        justify-content: space-between;
+        flex-direction: column;
 
         border: 1px solid transparent;
         border-radius: 8px;
         box-shadow: 0px 1px 8px 0px var(--color-accordion-shadow);
     }
+    .faq-item.open {
+        gap: 1rem;
+    }
 
     .faq-content {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        margin-bottom: .5rem;
-        margin-top: .5rem;
-        margin-right: 1rem;
-
-        h3 {
-            font-size: 1rem;
-            font-weight: 800;
-            color: var(--color-titles);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-
-            text-align: start;
-            margin: 0;
-            max-width: 100%;
-
-            @media (max-width: 768px) {
-                text-align: center;
-                margin: 0 auto;
-            }
-
-            @media (max-width: 1400px) {
-                color: var(--color-titles);
-                max-width: 340px;
-            }
-        }
-
-        p {
-            font-size: 18px;
-            color: var(--color-text);
-
-            text-align: start;
-            margin: 0 auto;
-            
-            @media (max-width: 1400px) {
-                text-align: center;
-                max-width: 100%;
-            }
-
-        }
+        width: 100%;
     }
 
     .empty {
@@ -1465,8 +1425,12 @@ header .header-container {
 
     .fa-chevron-up {
         font-size: .8rem;
-        color: var(--color-chevron-up);
+        color: white;
         transform: rotate(180deg);
+    }
+
+    .fa-chevron-down {
+        color: var(--color-chevron-up);
     }
 
     .btn-contact-container {
