@@ -1,5 +1,5 @@
 
-// src/utils/darkMode.js
+
 
 export const enableDarkMode = () => {
   document.documentElement.classList.add('dark');
@@ -16,13 +16,13 @@ export const initializeDarkMode = () => {
 
   if (hasDarkmode === null) {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      enableDarkMode(); // Aktivera dark mode om systemet föredrar det
+      enableDarkMode();
     } else {
-      disableDarkMode(); // Annars inaktivera dark mode
+      disableDarkMode();
     }
   } else if (hasDarkmode === 'on') {
-    enableDarkMode(); // Aktivera dark mode om det är inställt på 'on'
+    enableDarkMode();
   } else {
-    disableDarkMode(); // Inaktivera dark mode om det är inställt på 'off'
+    disableDarkMode();
   }
 };

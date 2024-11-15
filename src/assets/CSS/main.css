@@ -50,6 +50,9 @@
     --color-footer-text: var(--color-grey-600);
     --color-contact-text: var(--color-grey-600);
     --color-link-text: var(--color-primary);
+    --color-faq-item-bg: var(--color-white);
+
+    --color-mobile-menu-list: var(--color-grey-100);
 
     --color-btn-hover: #4a4ca3;
     --color-btn-download-hover: #2b354f;
@@ -93,6 +96,7 @@ html {
     --color-card-bg: #1e212b;
     --color-arrow-bg: #1e212b;
     --color-input-bg: #191d27;
+    --color-faq-item-bg: #151822;
 
     /* TEXT */
     --color-titles: var(--color-white);
@@ -109,6 +113,8 @@ html {
     --color-contact-border: #2f333b;
     --color-input-border: #2f333b;
     --color-chevron-up: var(--color-white);
+    --color-chevron-up-darkmode: #fff;
+    --color-mobile-menu-list: #151822;
 
     /* infobox colors */
     --color-infobox-bg: rgb(38, 66, 38);
@@ -256,6 +262,57 @@ header .container {
     @media (min-width: 1400px) {
         display: none;
     }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: -12%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.5s ease;
+}
+
+.mobile-menu.open {
+    transform: translateY(100%);
+}
+
+.mobile-bar {
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+.mobile-bar.open {
+    display: block;
+}
+
+.menu-close {
+    position: absolute;
+    top: 1.3rem;
+    right: 5rem;
+    background: transparent;
+    color: var(--color-dark);
+    border: 1px solid transparent;
+    font-size: 2rem;
+}
+
+.mobile-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-mobile-menu-list);
+    height: 5rem;
+}
+
+.mobile-bar a {
+    text-decoration: none;
+    padding: .7rem;
+    background-color: var(--color-mobile-menu-list);
+    color: var(--color-text);
 }
 
 /* Nedan kodstycke är med hjälp av ChatGPT */
@@ -1349,6 +1406,7 @@ header .header-container {
         padding: 10px;
         width: 100%;
         overflow: hidden;
+        background-color: var(--color-faq-item-bg);
     }
 
     .faq-title {
@@ -1369,10 +1427,6 @@ header .header-container {
     .faq-item.open .arrow-down-icon {
         margin-top: 0;
         background-color: var(--color-primary);
-    }
-
-    .faq-item.open .arrow-down-icon i {
-        color: var(--color-light);
     }
 
     .faq-item .faq-content-text {
