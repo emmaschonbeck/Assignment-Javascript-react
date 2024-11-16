@@ -34,7 +34,7 @@ const TestimonialsApi = () => {
     return (
     <>
         {testimonials.map((item) => (
-            <div className='card'>
+            <div className='card' key={item.id}>
 
                 <div className='card-icon'>
                     <img src={QuoteIcon} alt="Quote Icon" />

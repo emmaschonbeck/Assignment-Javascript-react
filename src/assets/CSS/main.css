@@ -248,6 +248,7 @@ header .container {
     background-color: transparent;
     border: none;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .mobile-menu-container {
@@ -295,6 +296,7 @@ header .container {
     color: var(--color-dark);
     border: 1px solid transparent;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .mobile-bar ul {
