@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const MobileMenu = () => {
-  const [isOpen, setIsOpen] = useState(false); // Hanterar öppning och stängning av menyn
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    setIsOpen(!isOpen);  // Växlar tillståndet för att öppna/stänga menyn
+    setIsOpen(!isOpen);
   }
 
   const closeMenu = () => {

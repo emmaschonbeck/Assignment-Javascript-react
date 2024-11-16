@@ -11,6 +11,7 @@ const InputField = () => {
   const [submitted, setSubmitted] = useState(false);
   const navigate = useNavigate();
 
+  // Reg ex är taget från ChatGPT
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   const handleChange = (e) => {

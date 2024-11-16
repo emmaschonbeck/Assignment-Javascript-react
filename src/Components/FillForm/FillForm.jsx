@@ -11,6 +11,7 @@ const FillForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const navigate = useNavigate()
 
+  // Reg ex taget från ChatGPT
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const fullNameRegex = /^[a-zA-Z\s]+$/;
 
@@ -18,6 +19,7 @@ const FillForm = () => {
     const { name, value } = event.target;
     setFormData({...formData, [name]: value})
 
+    // MEd hjälp av ChatGPT
     if (value.trim() === '') {
       setErrors(prevErrors => ({...prevErrors, [name]: `The ${name} field is required.`}))
     } else if (name === 'email' && !emailRegex.test(value)) {

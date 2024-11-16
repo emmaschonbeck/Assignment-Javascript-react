@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
+// Med hjälp av ChatGPT
+
 const DarkModeSwitch = () => {
   const [isDarkMode, setisDarkMode] = useState(false);
 
